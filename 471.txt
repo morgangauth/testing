@@ -1,0 +1,99 @@
+diff --git a/dev/linters/onconflict/BUILD.bazel b/dev/linters/onconflict/BUILD.bazel
+new file mode 100644
+index 00000000000..019c3ab18bf
+--- /dev/null
++++ b/dev/linters/onconflict/BUILD.bazel
+@@ -0,0 +1,13 @@
++load("@io_bazel_rules_go//go:def.bzl", "go_library")
++
++go_library(
++    name = "onconflict",
++    srcs = ["onconflict.go"],
++    importpath = "github.com/sourcegraph/sourcegraph/dev/linters/onconflict",
++    tags = [TAG_PLATFORM_SEARCH], # for multitenant project
++    visibility = ["//visibility:public"],
++    deps = [
++        "//dev/linters/nolint",
++        "@org_golang_x_tools//go/analysis",
++    ],
++)
+diff --git a/dev/linters/onconflict/cmd/onconflict/main.go b/dev/linters/onconflict/cmd/onconflict/main.go
+new file mode 100644
+index 00000000000..88dedaee2a3
+--- /dev/null
++++ b/dev/linters/onconflict/cmd/onconflict/main.go
+@@ -0,0 +1,8 @@
++package main
++
++import (
++	"github.com/sourcegraph/sourcegraph/dev/linters/onconflict"
++	"golang.org/x/tools/go/analysis/singlechecker"
++)
++
++func main() { singlechecker.Main(onconflict.Analyzer) }
+diff --git a/dev/linters/onconflict/onconflict.go b/dev/linters/onconflict/onconflict.go
+new file mode 100644
+index 00000000000..d58132080fa
+--- /dev/null
++++ b/dev/linters/onconflict/onconflict.go
+@@ -0,0 +1,60 @@
++package onconflict
++
++import (
++	"go/ast"
++	"go/token"
++	"strings"
++
++	"golang.org/x/tools/go/analysis"
++
++	"github.com/sourcegraph/sourcegraph/dev/linters/nolint"
++)
++
++var Analyzer = nolint.Wrap(&analysis.Analyzer{
++	Name: "onconflict",
++	Doc:  "Temporarily disallow ON CONFLICT on column names during the tenant_id transition.",
++	Run:  run,
++})
++
++func run(pass *analysis.Pass) (any, error) {
++	for _, f := range pass.Files {
++		ast.Inspect(f, func(node ast.Node) bool {
++			switch n := node.(type) {
++			case *ast.BasicLit:
++				if n.Kind == token.STRING {
++					inspectString(pass, n, n.Value)
++				}
++			}
++			return true
++		})
++	}
++
++	return nil, nil
++}
++
++func inspectString(pass *analysis.Pass, n analysis.Range, s string) {
++	// https://www.postgresql.org/docs/12/sql-insert.html#SQL-ON-CONFLICT
++
++	// naively look for ON CONFLICT statements
++	start := strings.Index(s, "ON CONFLICT")
++	if start < 0 {
++		return
++	}
++
++	clause := s[start:]
++	if end := strings.Index(clause, "DO"); end < 0 {
++		pass.ReportRangef(n, "missing DO clause for ON CONFLICT so can't analyse: %q", s)
++		return
++	} else {
++		clause = clause[:end]
++	}
++
++	// conflict_target has to contain a parenthesis if it is specified and
++	// isn't ON CONSTRAINT (see Synopsis on
++	// https://www.postgresql.org/docs/12/sql-insert.html)
++	if !strings.Contains(clause, "(") {
++		return
++	}
++
++	pass.ReportRangef(n, "ON CONFLICT specifies an index_column_name or index_expression. Please update to ON CONSTRAINT if it is a unique index or explicitly exclude from linting: %q", strings.TrimSpace(clause))
++}

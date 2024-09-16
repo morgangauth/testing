@@ -1,0 +1,506 @@
+{
+    "planets": [
+      {
+        "name": "Earth",
+        "type": "Terrestrial",
+        "population": 8000000000,
+        "dominant_species": "Humans",
+        "atmosphere": "Nitrogen-Oxygen",
+        "orbit_time": 365,
+        "moons": [
+          {
+            "name": "Moon",
+            "diameter": 3474,
+            "gravity": 1.62
+          }
+        ],
+        "cities": [
+          {
+            "name": "New York",
+            "population": 8400000,
+            "governing_body": "Mayor"
+          },
+          {
+            "name": "Tokyo",
+            "population": 13900000,
+            "governing_body": "Governor"
+          }
+        ]
+      },
+      {
+        "name": "Mars",
+        "type": "Terrestrial",
+        "population": 0,
+        "dominant_species": "None",
+        "atmosphere": "Carbon Dioxide",
+        "orbit_time": 687,
+        "moons": [
+          {
+            "name": "Phobos",
+            "diameter": 22.4,
+            "gravity": 0.0057
+          }
+        ],
+        "cities": [
+          {
+            "name": "Olympus City",
+            "population": 200000,
+            "governing_body": "Council of Martian Settlers"
+          }
+        ]
+      },
+      {
+        "name": "Jupiter",
+        "type": "Gas Giant",
+        "population": 0,
+        "dominant_species": "None",
+        "atmosphere": "Hydrogen-Helium",
+        "orbit_time": 4333,
+        "moons": [
+          {
+            "name": "Europa",
+            "diameter": 3121.6,
+            "gravity": 1.315
+          }
+        ],
+        "cities": []
+      },
+      {
+        "name": "Vega",
+        "type": "Rocky",
+        "population": 2500000000,
+        "dominant_species": "Vegans",
+        "atmosphere": "Nitrogen-Argon",
+        "orbit_time": 512,
+        "moons": [
+          {
+            "name": "Vegus 1",
+            "diameter": 2000,
+            "gravity": 0.8
+          }
+        ],
+        "cities": [
+          {
+            "name": "Vega Prime",
+            "population": 1000000,
+            "governing_body": "Governor Vegus"
+          },
+          {
+            "name": "Vega Minor",
+            "population": 800000,
+            "governing_body": "Council of Elders"
+          }
+        ]
+      },
+      {
+        "name": "Alpha",
+        "type": "Aquatic",
+        "population": 500000000,
+        "dominant_species": "Alphians",
+        "atmosphere": "Oxygen-Argon",
+        "orbit_time": 822,
+        "moons": [
+          {
+            "name": "Alphus 1",
+            "diameter": 1500,
+            "gravity": 1.1
+          }
+        ],
+        "cities": [
+          {
+            "name": "Alpha Bay",
+            "population": 300000,
+            "governing_body": "Queen Alphina"
+          }
+        ]
+      },
+      {
+        "name": "Delta",
+        "type": "Rocky",
+        "population": 100000000,
+        "dominant_species": "Deltans",
+        "atmosphere": "Nitrogen-Oxygen",
+        "orbit_time": 400,
+        "moons": [
+          {
+            "name": "Deltos",
+            "diameter": 1800,
+            "gravity": 1.2
+          }
+        ],
+        "cities": []
+      },
+      {
+        "name": "Gamma",
+        "type": "Frozen",
+        "population": 30000000,
+        "dominant_species": "Gammans",
+        "atmosphere": "Methane",
+        "orbit_time": 1100,
+        "moons": [
+          {
+            "name": "Gammon",
+            "diameter": 2800,
+            "gravity": 1.0
+          }
+        ],
+        "cities": [
+          {
+            "name": "Gammaopolis",
+            "population": 500000,
+            "governing_body": "King Gammor"
+          }
+        ]
+      },
+      {
+        "name": "Omega",
+        "type": "Desert",
+        "population": 5000000,
+        "dominant_species": "Omegan",
+        "atmosphere": "Argon",
+        "orbit_time": 900,
+        "moons": [
+          {
+            "name": "Omegus",
+            "diameter": 3000,
+            "gravity": 0.9
+          }
+        ],
+        "cities": [
+          {
+            "name": "Omegatown",
+            "population": 200000,
+            "governing_body": "Governor Omegus"
+          }
+        ]
+      },
+      {
+        "name": "Zeta",
+        "type": "Volcanic",
+        "population": 12000000,
+        "dominant_species": "Zetans",
+        "atmosphere": "Sulfur Dioxide",
+        "orbit_time": 700,
+        "moons": [
+          {
+            "name": "Zetus",
+            "diameter": 1700,
+            "gravity": 1.4
+          }
+        ],
+        "cities": [
+          {
+            "name": "Zetar",
+            "population": 100000,
+            "governing_body": "Overlord Zetarian"
+          }
+        ]
+      },
+      {
+        "name": "Tau",
+        "type": "Gas Giant",
+        "population": 0,
+        "dominant_species": "None",
+        "atmosphere": "Helium",
+        "orbit_time": 1500,
+        "moons": [
+          {
+            "name": "Tauron",
+            "diameter": 5000,
+            "gravity": 1.8
+          }
+        ],
+        "cities": []
+      },
+      {
+        "name": "Theta",
+        "type": "Oceanic",
+        "population": 1500000,
+        "dominant_species": "Thetians",
+        "atmosphere": "Oxygen",
+        "orbit_time": 650,
+        "moons": [
+          {
+            "name": "Thetaron",
+            "diameter": 4000,
+            "gravity": 1.2
+          }
+        ],
+        "cities": []
+      },
+      {
+        "name": "Kappa",
+        "type": "Terrestrial",
+        "population": 2000000,
+        "dominant_species": "Kappans",
+        "atmosphere": "Oxygen-Nitrogen",
+        "orbit_time": 1000,
+        "moons": [
+          {
+            "name": "Kapron",
+            "diameter": 4000,
+            "gravity": 0.9
+          }
+        ],
+        "cities": []
+      },
+      {
+        "name": "Iota",
+        "type": "Forest",
+        "population": 500000,
+        "dominant_species": "Iotians",
+        "atmosphere": "Oxygen-Carbon Dioxide",
+        "orbit_time": 800,
+        "moons": [
+          {
+            "name": "Ioton",
+            "diameter": 3500,
+            "gravity": 1.1
+          }
+        ],
+        "cities": []
+      }
+    ],
+    "characters": [
+      {
+        "name": "John Doe",
+        "age": 34,
+        "species": "Human",
+        "occupation": "Engineer",
+        "home_planet": "Earth",
+        "affiliations": ["United Nations"]
+      },
+      {
+        "name": "Jane Doe",
+        "age": 30,
+        "species": "Human",
+        "occupation": "Scientist",
+        "home_planet": "Earth",
+        "affiliations": ["United Nations"]
+      },
+      {
+        "name": "Alex Martian",
+        "age": 28,
+        "species": "Human",
+        "occupation": "Colonist",
+        "home_planet": "Mars",
+        "affiliations": ["Mars Colonial Council"]
+      },
+      {
+        "name": "Vegus Leader",
+        "age": 120,
+        "species": "Vegan",
+        "occupation": "Diplomat",
+        "home_planet": "Vega",
+        "affiliations": ["Vega Alliance"]
+      },
+      {
+        "name": "Alphina",
+        "age": 200,
+        "species": "Alphian",
+        "occupation": "Queen",
+        "home_planet": "Alpha",
+        "affiliations": ["Alpha Sovereignty"]
+      },
+      {
+        "name": "Deltos Rex",
+        "age": 150,
+        "species": "Deltan",
+        "occupation": "King",
+        "home_planet": "Delta",
+        "affiliations": ["Delta Kingdom"]
+      },
+      {
+        "name": "King Gammor",
+        "age": 70,
+        "species": "Gamman",
+        "occupation": "Monarch",
+        "home_planet": "Gamma",
+        "affiliations": ["Gamma Kingdom"]
+      },
+      {
+        "name": "Governor Omegus",
+        "age": 45,
+        "species": "Omegan",
+        "occupation": "Governor",
+        "home_planet": "Omega",
+        "affiliations": ["Omega Council"]
+      },
+      {
+        "name": "Overlord Zetarian",
+        "age": 110,
+        "species": "Zetan",
+        "occupation": "Overlord",
+        "home_planet": "Zeta",
+        "affiliations": ["Zeta Empire"]
+      },
+      {
+        "name": "Tauron Leader",
+        "age": 200,
+        "species": "Unknown",
+        "occupation": "Ruler",
+        "home_planet": "Tau",
+        "affiliations": ["Tau Empire"]
+      },
+      {
+        "name": "Queen Thetis",
+        "age": 50,
+        "species": "Thetian",
+        "occupation": "Monarch",
+        "home_planet": "Theta",
+        "affiliations": ["Theta Kingdom"]
+      },
+      {
+        "name": "Chief Kapros",
+        "age": 120,
+        "species": "Kappan",
+        "occupation": "Tribal Leader",
+        "home_planet": "Kappa",
+        "affiliations": ["Kappa Tribe"]
+      },
+      {
+        "name": "Ruler Iotina",
+        "age": 65,
+        "species": "Iotian",
+        "occupation": "Supreme Leader",
+        "home_planet": "Iota",
+        "affiliations": ["Iota Assembly"]
+      }
+    ],
+    "organizations": [
+      {
+        "name": "United Nations",
+        "purpose": "Global Governance",
+        "leader": "John Doe",
+        "members": ["John Doe", "Jane Doe"]
+      },
+      {
+        "name": "Mars Colonial Council",
+        "purpose": "Martian Governance",
+        "leader": "Alex Martian",
+        "members": ["Alex Martian"]
+      },
+      {
+        "name": "Vega Alliance",
+        "purpose": "Galactic Diplomacy",
+        "leader": "Vegus Leader",
+        "members": ["Vegus Leader"]
+      },
+      {
+        "name": "Alpha Sovereignty",
+        "purpose": "Planetary Defense",
+        "leader": "Alphina",
+        "members": ["Alphina"]
+      },
+      {
+        "name": "Delta Kingdom",
+        "purpose": "Monarchy",
+        "leader": "Deltos Rex",
+        "members": ["Deltos Rex"]
+      },
+      {
+        "name": "Gamma Kingdom",
+        "purpose": "Monarchy",
+        "leader": "King Gammor",
+        "members": ["King Gammor"]
+      },
+      {
+        "name": "Omega Council",
+        "purpose": "Regional Governance",
+        "leader": "Governor Omegus",
+        "members": ["Governor Omegus"]
+      },
+      {
+        "name": "Zeta Empire",
+        "purpose": "Empire Expansion",
+        "leader": "Overlord Zetarian",
+        "members": ["Overlord Zetarian"]
+      },
+      {
+        "name": "Tau Empire",
+        "purpose": "Galactic Domination",
+        "leader": "Tauron Leader",
+        "members": ["Tauron Leader"]
+      },
+      {
+        "name": "Theta Kingdom",
+        "purpose": "Planetary Defense",
+        "leader": "Queen Thetis",
+        "members": ["Queen Thetis"]
+      },
+      {
+        "name": "Kappa Tribe",
+        "purpose": "Primitive Society",
+        "leader": "Chief Kapros",
+        "members": ["Chief Kapros"]
+      },
+      {
+        "name": "Iota Assembly",
+        "purpose": "Planetary Leadership",
+        "leader": "Ruler Iotina",
+        "members": ["Ruler Iotina"]
+      }
+    ],
+    "events": [
+      {
+        "name": "Earth-Mars Treaty",
+        "event_type": "Diplomatic",
+        "participants": ["John Doe", "Alex Martian"],
+        "location": "Olympus City",
+        "date": "2071-09-01"
+      },
+      {
+        "name": "Jupiter Exploration Mission",
+        "event_type": "Scientific",
+        "participants": ["Jane Doe"],
+        "location": "Europa",
+        "date": "2075-04-15"
+      },
+      {
+        "name": "Vega-Alpha Trade Agreement",
+        "event_type": "Economic",
+        "participants": ["Vegus Leader", "Alphina"],
+        "location": "Vega Prime",
+        "date": "2080-05-20"
+      },
+      {
+        "name": "Alpha War of Unification",
+        "event_type": "Military",
+        "participants": ["Alphina"],
+        "location": "Alpha Bay",
+        "date": "2090-03-14"
+      },
+      {
+        "name": "Galactic Unity Conference",
+        "event_type": "Political",
+        "participants": ["Vegus Leader", "Alphina", "Deltos Rex"],
+        "location": "Olympus City",
+        "date": "2095-07-01"
+      },
+      {
+        "name": "Delta Invasion of Alpha",
+        "event_type": "Military",
+        "participants": ["Deltos Rex", "Alphina"],
+        "location": "Alpha Bay",
+        "date": "2100-10-10"
+      },
+      {
+        "name": "Gamma-Omega Peace Talks",
+        "event_type": "Diplomatic",
+        "participants": ["King Gammor", "Governor Omegus"],
+        "location": "Omegatown",
+        "date": "2110-04-15"
+      },
+      {
+        "name": "Zetan Rebellion",
+        "event_type": "Military",
+        "participants": ["Overlord Zetarian"],
+        "location": "Zetar",
+        "date": "2120-06-10"
+      },
+      {
+        "name": "Discovery of Ancient Artifacts",
+        "event_type": "Exploration",
+        "participants": ["John Doe", "Jane Doe"],
+        "location": "Gammaopolis",
+        "date": "2125-09-01

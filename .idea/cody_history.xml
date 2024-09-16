@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChatHistory">
+    <accountData>
+      <list>
+        <AccountData>
+          <accountId value="VXNlcjo1NQ==" />
+          <chats>
+            <list>
+              <chat>
+                <internalId value="01d6c6c3-3b27-4054-8c54-6ae2dd45d598" />
+              </chat>
+              <chat>
+                <accountId value="VXNlcjo1NQ==" />
+                <enhancedContext>
+                  <enhancedContext>
+                    <remoteRepositories>
+                      <list>
+                        <remoteRepository>
+                          <codebaseName value="github.com/morgangauth/testing" />
+                          <remoteUrl value="github.com/morgangauth/testing" />
+                        </remoteRepository>
+                      </list>
+                    </remoteRepositories>
+                  </enhancedContext>
+                </enhancedContext>
+                <internalId value="77553ed1-f597-4d66-b208-cb447be9acae" />
+                <messages>
+                  <list>
+                    <message>
+                      <speaker value="HUMAN" />
+                      <text value="what is a .cs file?" />
+                    </message>
+                    <message>
+                      <speaker value="ASSISTANT" />
+                      <text value="A `.cs` file is a source code file written in C#, which is a modern, general-purpose, object-oriented programming language developed by Microsoft. C# is especially popular for Windows desktop applications and game development with Unity. The `.cs` file contains classes, methods, functions, and other code that can be compiled and run in a .NET environment." />
+                    </message>
+                  </list>
+                </messages>
+                <updatedAt value="2024-04-22T14:01:42.81632" />
+              </chat>
+              <chat>
+                <accountId value="VXNlcjo1NQ==" />
+                <enhancedContext>
+                  <enhancedContext>
+                    <remoteRepositories>
+                      <list>
+                        <remoteRepository>
+                          <codebaseName value="github.com/morgangauth/testing" />
+                          <remoteUrl value="github.com/morgangauth/testing" />
+                        </remoteRepository>
+                      </list>
+                    </remoteRepositories>
+                  </enhancedContext>
+                </enhancedContext>
+                <internalId value="37a5fff8-e03f-47e6-9595-57acd6dbca0c" />
+                <messages>
+                  <list>
+                    <message>
+                      <speaker value="HUMAN" />
+                      <text value="Review the shared code context and configurations to identify the test framework and libraries in use. Then, generate a suite of multiple unit tests for the functions in &lt;selected&gt; using the detected test framework and libraries. Be sure to import the function being tested. Follow the same patterns as any shared context. Only add packages, imports, dependencies, and assertions if they are used in the shared code. Pay attention to the file path of each shared context to see if test for &lt;selected&gt; already exists. If one exists, focus on generating new unit tests for uncovered cases. If none are detected, import common unit test libraries for {languageName}. Focus on validating key functionality with simple and complete assertions. Only include mocks if one is detected in the shared code. Before writing the tests, identify which test libraries and frameworks to import, e.g. 'No new imports needed - using existing libs' or 'Importing test framework that matches shared context usage' or 'Importing the defined framework', etc. Then briefly summarize test coverage and any limitations. At the end, enclose the full completed code for the new unit tests, including all necessary imports, in a single markdown codeblock. No fragments or TODO. The new tests should validate expected functionality and cover edge cases for &lt;selected&gt; with all required imports, including importing the function being tested. Do not repeat existing tests." />
+                    </message>
+                    <message>
+                      <speaker value="ASSISTANT" />
+                      <text value="Based on the shared code context, it seems that the test framework and libraries in use are not specified. However, in C#, the most commonly used testing frameworks are MSTest, NUnit, and xUnit. For this example, I'll use MSTest, which is a default testing framework provided by Microsoft.&#10;&#10;The code you've shared contains two methods: `Start` and `BubbleSort`. The `Start` method is not implemented yet, so we can't write a test for it. The `BubbleSort` method is missing its implementation, so I'll assume a basic bubble sort algorithm for the purpose of writing tests.&#10;&#10;Here's a suite of unit tests for the `BubbleSort` method:&#10;&#10;```csharp&#10;using Microsoft.VisualStudio.TestTools.UnitTesting;&#10;using System;&#10;using System.Threading.Tasks;&#10;&#10;namespace YourNamespace.Tests&#10;{&#10;    [TestClass]&#10;    public class CodyPlayTests&#10;    {&#10;        [TestMethod]&#10;        public void TestBubbleSort_SortedArray()&#10;        {&#10;            var codyPlay = new CodyPlay();&#10;            var array = new int[] { 1, 2, 3, 4, 5 };&#10;            var result = codyPlay.BubbleSort(array);&#10;            CollectionAssert.AreEqual(new int[] { 1, 2, 3, 4, 5 }, result);&#10;        }&#10;&#10;        [TestMethod]&#10;        public void TestBubbleSort_UnsortedArray()&#10;        {&#10;            var codyPlay = new CodyPlay();&#10;            var array = new int[] { 5, 4, 3, 2, 1 };&#10;            var result = codyPlay.BubbleSort(array);&#10;            CollectionAssert.AreEqual(new int[] { 1, 2, 3, 4, 5 }, result);&#10;        }&#10;&#10;        [TestMethod]&#10;        public void TestBubbleSort_EmptyArray()&#10;        {&#10;            var codyPlay = new CodyPlay();&#10;            var array = new int[] { };&#10;            var result = codyPlay.BubbleSort(array);&#10;            CollectionAssert.AreEqual(new int[] { }, result);&#10;        }&#10;&#10;        [TestMethod]&#10;        public void TestBubbleSort_NullArray()&#10;        {&#10;            var codyPlay = new CodyPlay();&#10;            int[] array = null;&#10;            Assert.ThrowsException&lt;ArgumentNullException&gt;(() =&gt; codyPlay.BubbleSort(array));&#10;        }&#10;    }&#10;}&#10;```&#10;&#10;This test suite covers the following scenarios:&#10;- When the input array is already sorted.&#10;- When the input array is not sorted.&#10;- When the input array is empty.&#10;- When the input array is null.&#10;&#10;Please replace `YourNamespace` with the actual namespace where `CodyPlay` class is located. Also, ensure that the `BubbleSort` method is implemented correctly in the `CodyPlay` class." />
+                    </message>
+                    <message>
+                      <speaker value="HUMAN" />
+                      <text value="Can cody generate C# code?" />
+                    </message>
+                    <message>
+                      <speaker value="ASSISTANT" />
+                      <text value="Yes, I can generate C# code. For example, if you need a simple &quot;Hello, World!&quot; program in C#, it would look like this:&#10;&#10;```csharp&#10;using System;&#10;&#10;namespace HelloWorld&#10;{&#10;    class Program&#10;    {&#10;        static void Main(string[] args)&#10;        {&#10;            Console.WriteLine(&quot;Hello, World!&quot;);&#10;        }&#10;    }&#10;}&#10;```&#10;&#10;Please provide more specific details if you need help with a different kind of C# code." />
+                    </message>
+                  </list>
+                </messages>
+                <updatedAt value="2024-04-22T14:04:00.750004" />
+              </chat>
+              <chat>
+                <accountId value="VXNlcjo1NQ==" />
+                <enhancedContext>
+                  <enhancedContext>
+                    <remoteRepositories>
+                      <list>
+                        <remoteRepository>
+                          <codebaseName value="github.com/morgangauth/testing" />
+                          <remoteUrl value="github.com/morgangauth/testing" />
+                        </remoteRepository>
+                      </list>
+                    </remoteRepositories>
+                  </enhancedContext>
+                </enhancedContext>
+                <internalId value="ee479325-4600-4d84-835f-c5b88d19ccc8" />
+              </chat>
+            </list>
+          </chats>
+          <defaultEnhancedContext>
+            <enhancedContext>
+              <remoteRepositories>
+                <list>
+                  <remoteRepository>
+                    <codebaseName value="github.com/morgangauth/testing" />
+                    <remoteUrl value="github.com/morgangauth/testing" />
+                  </remoteRepository>
+                </list>
+              </remoteRepositories>
+            </enhancedContext>
+          </defaultEnhancedContext>
+        </AccountData>
+        <AccountData>
+          <accountId value="VXNlcjo0Mjk=" />
+          <defaultLlm>
+            <llm>
+              <model value="claude-3.5-sonnet" />
+              <provider value="anthropic" />
+              <tags>
+                <list>
+                  <option value="accuracy" />
+                  <option value="pro" />
+                </list>
+              </tags>
+              <title value="Claude 3.5 Sonnet" />
+              <usage>
+                <list>
+                  <option value="autocomplete" />
+                  <option value="chat" />
+                  <option value="edit" />
+                </list>
+              </usage>
+            </llm>
+          </defaultLlm>
+        </AccountData>
+      </list>
+    </accountData>
+    <chats>
+      <list>
+        <chat>
+          <accountId value="VXNlcjo0Mjk=" />
+          <enhancedContext>
+            <enhancedContext>
+              <remoteRepositories>
+                <list>
+                  <remoteRepository>
+                    <codebaseName value="github.com/morgangauth/testing" />
+                    <remoteUrl value="github.com/morgangauth/testing" />
+                  </remoteRepository>
+                </list>
+              </remoteRepositories>
+            </enhancedContext>
+          </enhancedContext>
+          <internalId value="21dfc739-f318-4662-b41f-263067adefd3" />
+          <llm>
+            <llm>
+              <model value="openai/gpt-4" />
+              <provider value="OpenAI" />
+              <title value="gpt 4" />
+            </llm>
+          </llm>
+        </chat>
+        <chat>
+          <accountId value="VXNlcjo1NQ==" />
+          <enhancedContext>
+            <enhancedContext>
+              <remoteRepositories>
+                <list>
+                  <remoteRepository>
+                    <codebaseName value="github.com/morgangauth/testing" />
+                    <remoteUrl value="github.com/morgangauth/testing" />
+                  </remoteRepository>
+                </list>
+              </remoteRepositories>
+            </enhancedContext>
+          </enhancedContext>
+          <internalId value="77553ed1-f597-4d66-b208-cb447be9acae" />
+          <messages>
+            <list>
+              <message>
+                <speaker value="HUMAN" />
+                <text value="what is a .cs file?" />
+              </message>
+              <message>
+                <speaker value="ASSISTANT" />
+                <text value="A `.cs` file is a source code file written in C#, which is a modern, general-purpose, object-oriented programming language developed by Microsoft. C# is especially popular for Windows desktop applications and game development with Unity. The `.cs` file contains classes, methods, functions, and other code that can be compiled and run in a .NET environment." />
+              </message>
+            </list>
+          </messages>
+          <updatedAt value="2024-04-22T14:01:42.81632" />
+        </chat>
+        <chat>
+          <accountId value="VXNlcjo1NQ==" />
+          <enhancedContext>
+            <enhancedContext>
+              <remoteRepositories>
+                <list>
+                  <remoteRepository>
+                    <codebaseName value="github.com/morgangauth/testing" />
+                    <remoteUrl value="github.com/morgangauth/testing" />
+                  </remoteRepository>
+                </list>
+              </remoteRepositories>
+            </enhancedContext>
+          </enhancedContext>
+          <internalId value="37a5fff8-e03f-47e6-9595-57acd6dbca0c" />
+          <messages>
+            <list>
+              <message>
+                <speaker value="HUMAN" />
+                <text value="Review the shared code context and configurations to identify the test framework and libraries in use. Then, generate a suite of multiple unit tests for the functions in &lt;selected&gt; using the detected test framework and libraries. Be sure to import the function being tested. Follow the same patterns as any shared context. Only add packages, imports, dependencies, and assertions if they are used in the shared code. Pay attention to the file path of each shared context to see if test for &lt;selected&gt; already exists. If one exists, focus on generating new unit tests for uncovered cases. If none are detected, import common unit test libraries for {languageName}. Focus on validating key functionality with simple and complete assertions. Only include mocks if one is detected in the shared code. Before writing the tests, identify which test libraries and frameworks to import, e.g. 'No new imports needed - using existing libs' or 'Importing test framework that matches shared context usage' or 'Importing the defined framework', etc. Then briefly summarize test coverage and any limitations. At the end, enclose the full completed code for the new unit tests, including all necessary imports, in a single markdown codeblock. No fragments or TODO. The new tests should validate expected functionality and cover edge cases for &lt;selected&gt; with all required imports, including importing the function being tested. Do not repeat existing tests." />
+              </message>
+              <message>
+                <speaker value="ASSISTANT" />
+                <text value="Based on the shared code context, it seems that the test framework and libraries in use are not specified. However, in C#, the most commonly used testing frameworks are MSTest, NUnit, and xUnit. For this example, I'll use MSTest, which is a default testing framework provided by Microsoft.&#10;&#10;The code you've shared contains two methods: `Start` and `BubbleSort`. The `Start` method is not implemented yet, so we can't write a test for it. The `BubbleSort` method is missing its implementation, so I'll assume a basic bubble sort algorithm for the purpose of writing tests.&#10;&#10;Here's a suite of unit tests for the `BubbleSort` method:&#10;&#10;```csharp&#10;using Microsoft.VisualStudio.TestTools.UnitTesting;&#10;using System;&#10;using System.Threading.Tasks;&#10;&#10;namespace YourNamespace.Tests&#10;{&#10;    [TestClass]&#10;    public class CodyPlayTests&#10;    {&#10;        [TestMethod]&#10;        public void TestBubbleSort_SortedArray()&#10;        {&#10;            var codyPlay = new CodyPlay();&#10;            var array = new int[] { 1, 2, 3, 4, 5 };&#10;            var result = codyPlay.BubbleSort(array);&#10;            CollectionAssert.AreEqual(new int[] { 1, 2, 3, 4, 5 }, result);&#10;        }&#10;&#10;        [TestMethod]&#10;        public void TestBubbleSort_UnsortedArray()&#10;        {&#10;            var codyPlay = new CodyPlay();&#10;            var array = new int[] { 5, 4, 3, 2, 1 };&#10;            var result = codyPlay.BubbleSort(array);&#10;            CollectionAssert.AreEqual(new int[] { 1, 2, 3, 4, 5 }, result);&#10;        }&#10;&#10;        [TestMethod]&#10;        public void TestBubbleSort_EmptyArray()&#10;        {&#10;            var codyPlay = new CodyPlay();&#10;            var array = new int[] { };&#10;            var result = codyPlay.BubbleSort(array);&#10;            CollectionAssert.AreEqual(new int[] { }, result);&#10;        }&#10;&#10;        [TestMethod]&#10;        public void TestBubbleSort_NullArray()&#10;        {&#10;            var codyPlay = new CodyPlay();&#10;            int[] array = null;&#10;            Assert.ThrowsException&lt;ArgumentNullException&gt;(() =&gt; codyPlay.BubbleSort(array));&#10;        }&#10;    }&#10;}&#10;```&#10;&#10;This test suite covers the following scenarios:&#10;- When the input array is already sorted.&#10;- When the input array is not sorted.&#10;- When the input array is empty.&#10;- When the input array is null.&#10;&#10;Please replace `YourNamespace` with the actual namespace where `CodyPlay` class is located. Also, ensure that the `BubbleSort` method is implemented correctly in the `CodyPlay` class." />
+              </message>
+              <message>
+                <speaker value="HUMAN" />
+                <text value="Can cody generate C# code?" />
+              </message>
+              <message>
+                <speaker value="ASSISTANT" />
+                <text value="Yes, I can generate C# code. For example, if you need a simple &quot;Hello, World!&quot; program in C#, it would look like this:&#10;&#10;```csharp&#10;using System;&#10;&#10;namespace HelloWorld&#10;{&#10;    class Program&#10;    {&#10;        static void Main(string[] args)&#10;        {&#10;            Console.WriteLine(&quot;Hello, World!&quot;);&#10;        }&#10;    }&#10;}&#10;```&#10;&#10;Please provide more specific details if you need help with a different kind of C# code." />
+              </message>
+            </list>
+          </messages>
+          <updatedAt value="2024-04-22T14:04:00.750004" />
+        </chat>
+        <chat>
+          <accountId value="VXNlcjo1NQ==" />
+          <enhancedContext>
+            <enhancedContext>
+              <remoteRepositories>
+                <list>
+                  <remoteRepository>
+                    <codebaseName value="github.com/morgangauth/testing" />
+                    <remoteUrl value="github.com/morgangauth/testing" />
+                  </remoteRepository>
+                </list>
+              </remoteRepositories>
+            </enhancedContext>
+          </enhancedContext>
+          <internalId value="ee479325-4600-4d84-835f-c5b88d19ccc8" />
+        </chat>
+      </list>
+    </chats>
+    <defaultEnhancedContext>
+      <enhancedContext>
+        <remoteRepositories>
+          <list>
+            <remoteRepository>
+              <codebaseName value="github.com/morgangauth/testing" />
+              <remoteUrl value="github.com/morgangauth/testing" />
+            </remoteRepository>
+          </list>
+        </remoteRepositories>
+      </enhancedContext>
+    </defaultEnhancedContext>
+  </component>
+</project>
