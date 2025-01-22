@@ -1,1 +1,24 @@
-// test 
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+    <book category="fiction" id="B1">
+        <title>The Great Adventure</title>
+        <author>
+            <firstname>John</firstname>
+            <lastname>Smith</lastname>
+        </author>
+        <year>2023</year>
+        <price currency="USD">29.99</price>
+        <description>An exciting journey through unknown lands.</description>
+    </book>
+    
+    <book category="non-fiction" id="B2">
+        <title>Web Development Basics</title>
+        <author>
+            <firstname>Sarah</firstname>
+            <lastname>Johnson</lastname>
+        </author>
+        <year>2022</year>
+        <price currency="USD">45.50</price>
+        <description>A comprehensive guide to modern web development.</description>
+    </book>
+</bookstore>
