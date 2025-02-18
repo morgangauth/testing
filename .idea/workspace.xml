@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37b8df94-a50d-42b5-9223-e05a24e7425f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodyPlay.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_11_23,_3_42_PM_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_11_23__3_42_PM__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/471.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +57,7 @@
     &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;morgan-new-branch&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/morgangautho/GitHub/testing&quot;,
@@ -123,6 +119,10 @@
       <workItem from="1726497518806" duration="57000" />
       <workItem from="1726498592109" duration="116000" />
       <workItem from="1726498712773" duration="40000" />
+      <workItem from="1726498759659" duration="4109000" />
+      <workItem from="1728416864780" duration="17000" />
+      <workItem from="1728416889028" duration="1365000" />
+      <workItem from="1728419480040" duration="607000" />
     </task>
     <servers />
   </component>
