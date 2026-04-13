@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Dashboard</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="dashboard">
+      <header class="dashboard__header">
+        <div>
+          <h1>Todo Dashboard</h1>
+          <p>Track your tasks and keep momentum.</p>
+        </div>
+      </header>
+
+      <section class="stats" aria-label="Todo summary">
+        <article class="stat-card">
+          <h2>Total</h2>
+          <p id="total-count">0</p>
+        </article>
+        <article class="stat-card">
+          <h2>Completed</h2>
+          <p id="completed-count">0</p>
+        </article>
+        <article class="stat-card">
+          <h2>Remaining</h2>
+          <p id="remaining-count">0</p>
+        </article>
+      </section>
+
+      <section class="todo-panel" aria-label="Manage todo items">
+        <form id="todo-form" class="todo-form">
+          <label class="sr-only" for="todo-input">New todo</label>
+          <input
+            id="todo-input"
+            name="todo"
+            type="text"
+            placeholder="What do you need to do?"
+            maxlength="120"
+            required
+          />
+          <button type="submit">Add</button>
+        </form>
+
+        <div class="controls">
+          <label for="filter-select">Filter</label>
+          <select id="filter-select" name="filter">
+            <option value="all">All</option>
+            <option value="active">Active</option>
+            <option value="completed">Completed</option>
+          </select>
+          <button id="clear-completed-btn" type="button">Clear completed</button>
+        </div>
+
+        <ul id="todo-list" class="todo-list" aria-live="polite"></ul>
+      </section>
+    </main>
+
+    <template id="todo-item-template">
+      <li class="todo-item">
+        <label class="todo-item__toggle">
+          <input class="todo-item__checkbox" type="checkbox" />
+          <span class="todo-item__title"></span>
+        </label>
+        <button class="todo-item__delete" type="button" aria-label="Delete todo">
+          Delete
+        </button>
+      </li>
+    </template>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
