@@ -1,0 +1,14 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": "https://github.com/morgangauth/testing",
+  "author": "Cursor Agent <cursoragent@cursor.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "4"
+  }
+}
