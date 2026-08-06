@@ -1,0 +1,4 @@
+{
+  "name": "morgangauth/testing scratch repo",
+  "install": "bash .cursor/install.sh"
+}
